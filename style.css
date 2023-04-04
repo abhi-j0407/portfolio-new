@@ -1,14 +1,51 @@
+@font-face { font-family: Coolvetica; src: url('./fonts/coolvetica-rg.otf'); }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/*Preloader page*/
 .preloader {
     width: 100%;
     height: 100vh;
-    background-color: cadetblue;
+    background-color: whitesmoke;
     position: absolute;
+    font-family: Coolvetica;
+    font-size: min(12vw, 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-text {
+    display: flex;
+    gap: 2.5vw;
+    /* position: relative; */
+    border: 1px solid;
+}
+
+.letters {
+    display: flex;
+    animation: scale-letter 1s linear;
+}
+
+.loader-container {
+    display: flex;
+    align-items: end;
+    padding-bottom: 7%;
+}
+
+.loader {
+    width: min(2.5vw, 50px);
+    height: min(2.5vw, 50px);
+    background-color: black;
+    animation: rotates 2s linear infinite;
+    /* position: absolute;
+    right: -10%;
+    bottom: 20%; */
 }
 
 .preloaded {
@@ -16,6 +53,27 @@
     pointer-events: none;
 }
 
+@keyframes rotates{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale-letter {
+    from {
+        scale: 0;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/*Main page*/
 .main-page {
     width: 100%;
     height: 100vh;

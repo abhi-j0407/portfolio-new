@@ -208,7 +208,7 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    min-height: 500px;
+    min-height: 470px;
 }
 
 .about-content p {
@@ -287,8 +287,21 @@
         background-color: #FFF480;
     }
 
+    .about {
+        min-height: auto;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .about-content {
+        min-height: auto;
+    }
+
     .about-content p {
-        width: 90%;
+        width: 100%;
+        font-size: 25px;
     }
 
     .skills-rotate {
@@ -355,5 +368,9 @@
         grid-column-end: 3;
     
         background-color: #FFF480;
+    }
+
+    .about {
+        min-height: auto;
     }
 }

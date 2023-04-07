@@ -226,6 +226,84 @@
     border: 1px solid #BFACE2;
 }
 
+/* Skills */
+.skills {
+    height: 45vh;
+    margin-block: 1vh;
+    margin-inline: 5px;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.skills-title {
+    height: 100%;
+    width: 55%;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: #BFACE2;
+}
+
+.skills-title p {
+    color: var(--bg-black);
+    font-size: 30px;
+}
+
+.skills-title h4 {
+    color: var(--bg-black);
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.skills-content {
+    height: 100%;
+    width: 55%;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #2c302e;
+}
+
+.logos-container {
+    width: 75%;
+    height: 90%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: min(4vw, 100px);
+}
+
+.skill-logo {
+    width: 100px;
+    aspect-ratio: 1;
+
+    border: 1px solid lightblue;
+}
+
+.skills:hover .skills-title {
+    right: 0;
+}
+
+.skills:hover .skills-content {
+    left: 0;
+}
+
 /*Media queries for phones*/
 @media only screen and (max-width: 768px) {
     .header {
@@ -307,10 +385,42 @@
     .skills-rotate {
         display: none;
     }
+
+    .skills {
+        height: 60vh;
+        flex-direction: column;
+    }
+
+    .skills-title {
+        height: 55%;
+        width: 100%;
+        top: 0;
+    }
+    .skills-content {
+        height: 65%;
+        width: 100%;
+        bottom: 0;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .logos-container {
+        margin-left: 0;
+        width: 90%;
+        padding-top: 50px;
+    }
+
+    .logos-grid {
+        gap: 8vw;
+    }
+
+    .skill-logo {
+        width: 50px;
+    }
 }
 
 /*Media queries for tablets*/
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
     .header {
         height: 25vh;
     }
@@ -372,5 +482,38 @@
 
     .about {
         min-height: auto;
+    }
+
+    .skills {
+        height: 60vh;
+        flex-direction: column;
+    }
+
+    .skills-title {
+        height: 55%;
+        width: 100%;
+        top: 0;
+    }
+    .skills-content {
+        height: 65%;
+        width: 100%;
+        bottom: 0;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .logos-container {
+        margin-left: 0;
+        width: 90%;
+        padding-top: 80px;
+    }
+
+    .logos-grid {
+        gap: 7vw;
+        row-gap: 3vw;
+    }
+
+    .skill-logo {
+        width: 100px;
     }
 }

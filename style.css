@@ -304,6 +304,33 @@
     left: 0;
 }
 
+/* Contact */
+.contact-desc {
+    height: 80vh;
+    margin-block: 1vh;
+    margin-inline: 5px;
+    border-radius: 50px;
+
+    border: 1px solid #E7B10A;
+}
+
+.contact-desc-title {
+    color: #E7B10A;
+}
+
+.contact-desc-content {
+    color: #E7B10A;
+}
+
+.contact-rotate {
+    height: 150px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    align-self: flex-end;
+    color: #E7B10A;
+    border: 1px solid #E7B10A;
+}
+
 /*Media queries for phones*/
 @media only screen and (max-width: 768px) {
     .header {

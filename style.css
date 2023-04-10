@@ -316,9 +316,27 @@
 
 .contact-desc-title {
     color: #E7B10A;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 .contact-desc-content {
+    color: #E7B10A;
+    width: 75%;
+    font-size: 40px;
+}
+
+.link-btn, .contact-btn {
+    min-height: 50px;
+    min-width: 160px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background: none;
+    border-radius: 50px;
+    border: 2px solid #E7B10A;
+
+    font-size: 20px;
     color: #E7B10A;
 }
 
